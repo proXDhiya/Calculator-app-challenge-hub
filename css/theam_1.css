@@ -60,3 +60,9 @@ body {
     background-color: var(--key-backround);
     box-shadow: 0 5px 0 var(--key-shadow);
 }
+
+.keys > div > div:hover {
+    box-shadow: none !important;
+    position: relative;
+    top: 3px;
+}

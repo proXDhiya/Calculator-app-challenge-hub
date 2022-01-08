@@ -138,12 +138,15 @@ body {
     grid-gap: 20px;
 }
 
-.keys > div > button {
+.keys > div > div {
     font-size: 100%;
     font-weight: var(--font-weight);
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: all .3s !important;
 }
 
 :is(#reset, #result, #del) {
