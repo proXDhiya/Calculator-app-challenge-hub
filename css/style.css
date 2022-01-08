@@ -31,7 +31,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 12.5% 20% 1fr;
-    grid-gap: 5%;
+    grid-gap: 3%;
 }
 
 /**************top calculator section***************/
@@ -41,23 +41,32 @@ body {
     grid-template-columns: 15% 1fr 15% 15%;
     grid-template-rows: 100%;
     align-items: center;
+
+    position: relative;
 }
 
 .top > h1 {
     font-size: 100%;
+
+    position: absolute;
+    top: 25%;
 }
 
 .top > p {
     font-size: 45%;
     grid-column: 3 / 4;
-    justify-self: self-end;
+    justify-self: center;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    position: absolute;
+    top: 45%;
 }
 
 .main-toggle {
     grid-column: 4 / 5;
     justify-self: center;
+    align-self: flex-start;
 }
 
 .main-toggle > ul {
@@ -68,11 +77,29 @@ body {
 .main-toggle > ul > li {
     font-size: 40%;
     display: inline-block;
-    padding-left: 10px    
+    padding-left: 8px    
 }
 
 .main-toggle > ul > li:nth-child(1) {
     padding: 0;
+}
+
+.toggle {
+    width: 100%;
+    height: 21px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle > div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
 }
 
 /***************************************************/

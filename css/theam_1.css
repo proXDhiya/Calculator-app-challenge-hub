@@ -25,3 +25,11 @@ body {
 :is(.calculator > .top > h1, .calculator > .top > p, .main-toggle > ul > li) {
     color: var(--white);
 }
+
+.toggle {
+    background-color: var(--toggle-background);
+}
+
+.toggle > div {
+    background-color: var(--key-toggle);
+}
