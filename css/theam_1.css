@@ -1,0 +1,27 @@
+:root {
+    /* Background colors */
+    --main-background: rgb(58, 71, 100);
+    --toggle-background: rgb(35, 44, 67);
+    --keypad-background: var(--toggle-background);
+    --screen-background:  rgb(24, 32, 52);
+
+    /* Keys colors */
+    --key-backround: rgb(99, 112, 151);
+    --key-shadow: rgb(64, 78, 114);
+    --key-toggle: rgb(208, 63, 47);
+    --key-toggle-shadow: rgb(147, 38, 26);
+    --key2-background: rgb(234, 227, 220);
+    --key2-shadow: rgb(180, 165, 151);
+
+    /* text */
+    --text1-color: rgb(68, 75, 90);
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--main-background);
+}
+
+:is(.calculator > .top > h1, .calculator > .top > p, .main-toggle > ul > li) {
+    color: var(--white);
+}
