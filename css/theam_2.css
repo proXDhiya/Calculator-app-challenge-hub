@@ -1,0 +1,68 @@
+:root {
+    /* Background colors */
+    --main-background: rgb(230, 230, 230);
+    --toggle-background: rgb(209, 204, 204);
+    --keypad-background: var(--toggle-background);
+    --screen-background: rgb(237, 237, 237);
+
+    /* Keys colors */
+    --key-backround: rgb(55, 127, 134);
+    --key-shadow: rgb(27, 95, 101);
+    --key-toggle: rgb(202, 85, 2);
+    --key-toggle-shadow: rgb(137, 57, 1);
+    --key2-background: rgb(229, 228, 225);
+    --key2-shadow: rgb(166, 157, 145);
+
+    /* text */
+    --text-color: rgb(53, 53, 44);
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--main-background);
+}
+
+:is(.calculator > .top > h1, .calculator > .top > p, .main-toggle > ul > li, .screen > p) {
+    color: var(--text-color);
+}
+
+.toggle {
+    background-color: var(--toggle-background);
+}
+
+.toggle > div {
+    background-color: var(--key-toggle);
+    box-shadow: 0 1px 1px var(--key-toggle-shadow);
+}
+
+.screen {
+    background-color: var(--screen-background);
+}
+
+.keys {
+    background-color: var(--keypad-background);
+}
+
+:is(#num_0, #num_1, #num_2, #num_3, #num_4, #num_5, #num_6, #num_7, #num_8, #num_9, #point, #add, #sub, #div, #mul) {
+    background-color: var(--key2-background);
+    color: var(--text-color);
+    box-shadow: 0 5px 0 var(--key2-shadow);
+}
+
+#result {
+    color: var(--white);
+    background-color: var(--key-toggle);
+    box-shadow: 0 5px 0 var(--key-toggle-shadow);
+}
+
+:is(#reset, #del) {
+    color: var(--white);
+    background-color: var(--key-backround);
+    box-shadow: 0 5px 0 var(--key-shadow);
+}
+
+.keys > div > div:hover {
+    box-shadow: none !important;
+    position: relative;
+    top: 3px;
+}
