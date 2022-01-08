@@ -22,7 +22,7 @@ body {
     background-color: var(--main-background);
 }
 
-:is(.calculator > .top > h1, .calculator > .top > p, .main-toggle > ul > li) {
+:is(.calculator > .top > h1, .calculator > .top > p, .main-toggle > ul > li, .screen > p) {
     color: var(--white);
 }
 
@@ -32,4 +32,8 @@ body {
 
 .toggle > div {
     background-color: var(--key-toggle);
+}
+
+.screen {
+    background-color: var(--screen-background);
 }

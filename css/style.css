@@ -30,7 +30,7 @@ body {
 
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 12.5% 20% 1fr;
+    grid-template-rows: 10% 20% 1fr;
     grid-gap: 3%;
 }
 
@@ -49,7 +49,7 @@ body {
     font-size: 100%;
 
     position: absolute;
-    top: 25%;
+    top: 30%;
 }
 
 .top > p {
@@ -60,12 +60,12 @@ body {
     letter-spacing: 2px;
 
     position: absolute;
-    top: 45%;
+    top: 57.5%;
 }
 
 .main-toggle {
     grid-column: 4 / 5;
-    justify-self: center;
+    justify-self: flex-end;
     align-self: flex-start;
 }
 
@@ -100,6 +100,22 @@ body {
     position: absolute;
     top: 2.5px;
     left: 2.5px;
+}
+
+/***************************************************/
+/*************screen calculator section*************/
+
+.screen {
+    border-radius: 10px;
+    position: relative;
+}
+
+.screen > p {
+    font-size: 180%;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /***************************************************/
