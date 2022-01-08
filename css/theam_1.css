@@ -14,7 +14,7 @@
     --key2-shadow: rgb(180, 165, 151);
 
     /* text */
-    --text1-color: rgb(68, 75, 90);
+    --text-color: rgb(68, 75, 90);
     --white: #ffffff;
 }
 
@@ -32,8 +32,31 @@ body {
 
 .toggle > div {
     background-color: var(--key-toggle);
+    box-shadow: 0 1px 1px var(--key-toggle-shadow);
 }
 
 .screen {
     background-color: var(--screen-background);
+}
+
+.keys {
+    background-color: var(--keypad-background);
+}
+
+:is(#num_0, #num_1, #num_2, #num_3, #num_4, #num_5, #num_6, #num_7, #num_8, #num_9, #point, #add, #sub, #div, #mul) {
+    background-color: var(--key2-background);
+    color: var(--text-color);
+    box-shadow: 0 5px 0 var(--key2-shadow);
+}
+
+#result {
+    color: var(--white);
+    background-color: var(--key-toggle);
+    box-shadow: 0 5px 0 var(--key-toggle-shadow);
+}
+
+:is(#reset, #del) {
+    color: var(--white);
+    background-color: var(--key-backround);
+    box-shadow: 0 5px 0 var(--key-shadow);
 }

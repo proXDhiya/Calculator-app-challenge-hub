@@ -26,7 +26,7 @@ body {
 
 .calculator {
     height: 750px;
-    width: 550px;
+    width: 530px;
 
     display: grid;
     grid-template-columns: 100%;
@@ -116,6 +116,46 @@ body {
     right: 15px;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+/***************************************************/
+/**************Keys calculator section**************/
+
+.keys {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.keys > div {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.keys > div > button {
+    font-size: 100%;
+    font-weight: var(--font-weight);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+:is(#reset, #result, #del) {
+    font-size: 70%;
+}
+
+#reset {
+    grid-column: 1 / 3;
+}
+
+#result {
+    grid-column: 3 / 5;
 }
 
 /***************************************************/
