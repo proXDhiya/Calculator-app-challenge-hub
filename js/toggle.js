@@ -4,7 +4,7 @@
 const theme1 = document.getElementById('theme1');
 const theme2 = document.getElementById('theme2');
 const theme3 = document.getElementById('theme3');
-const toggle = document.querySelector('.toggle');
+const toggle = document.querySelector('.toggle > div');
 let state = 0;
 
 toggle.addEventListener(
