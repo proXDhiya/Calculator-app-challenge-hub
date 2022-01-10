@@ -104,7 +104,6 @@ body {
     height: 21px;
     border-radius: 10px;
     position: relative;
-    cursor: pointer;
 }
 
 .toggle > div {
@@ -116,7 +115,8 @@ body {
     top: 2.5px;
     left: 2.5px;
 
-    transition: margin .4s;
+    cursor: pointer;
+    transition: margin .4s, background 1s;
 }
 
 /***************************************************/
@@ -132,9 +132,8 @@ body {
 .screen > p {
     font-size: 180%;
     position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    right: 25px;
+    top: 30%;
 
     transition: color .4s;
 }
